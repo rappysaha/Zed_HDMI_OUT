@@ -23,7 +23,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 }
 
 # Configuration - Can be modified by the user
-set project_name 			proj_5
+set project_name 			proj_1
 set BD_name 					ZED_Hdmi_Out
 
 # Create a new project
