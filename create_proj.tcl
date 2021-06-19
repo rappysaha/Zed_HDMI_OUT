@@ -36,8 +36,8 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
   create_fileset -srcset sources_1
 }
 # Add hdl files
-add_files -fileset sources_1 -norecurse -scan_for_includes ./src/hdl
-import_files -fileset sources_1 -norecurse ./src/hdl
+# add_files -fileset sources_1 -norecurse -scan_for_includes ./src/hdl
+# import_files -fileset sources_1 -norecurse ./src/hdl
 
 # Create 'constrs_1' fileset (if not found)
 if {[string equal [get_filesets -quiet constrs_1] ""]} {
@@ -52,8 +52,8 @@ if {[string equal [get_filesets -quiet sim_1] ""]} {
   create_fileset -simset sim_1
 }
 # Add simulation files
-add_files -fileset sim_1 -norecurse -scan_for_includes ./src/sim
-import_files -fileset sim_1 -norecurse ./src/sim
+# add_files -fileset sim_1 -norecurse -scan_for_includes ./src/sim
+# import_files -fileset sim_1 -norecurse ./src/sim
 
 
 # Add ip repository
